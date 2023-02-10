@@ -151,6 +151,81 @@ function Dashboard() {
                 authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <DefaultProjectCard
+                image={image1}
+                label="Kiwi"
+                title="20.000 VND"
+                description="Quả kiwi hay quả lý gai Trung Quốc là quả mọng ăn được của một số loài dây leo thân gỗ trong chi Actinidia. Nhóm cây kiwi trồng phổ biến nhất có hình bầu dục, có kích thước bằng quả trứng gà mái lớn: chiều dài 5–8 cm và đường kính 4,5–5,5 cm"
+                action={{
+                  type: "internal",
+                  route: "/pages/profile/profile-overview",
+                  color: "info",
+                  label: "Xem thêm thông tin",
+                }}
+                authors={[{ image: team3, name: "Nick Daniel" }]}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <DefaultProjectCard
+                image={image2}
+                label="Nho"
+                title="22.000 VND"
+                description="Quả kiwi hay quả lý gai Trung Quốc là quả mọng ăn được của một số loài dây leo thân gỗ trong chi Actinidia. Nhóm cây kiwi trồng phổ biến nhất có hình bầu dục, có kích thước bằng quả trứng gà mái lớn: chiều dài 5–8 cm và đường kính 4,5–5,5 cm"
+                action={{
+                  type: "internal",
+                  route: "/pages/profile/profile-overview",
+                  color: "info",
+                  label: "Xem thêm thông tin",
+                }}
+                authors={[{ image: team3, name: "Nick Daniel" }]}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <DefaultProjectCard
+                image={image3}
+                label="Dưa hấu"
+                title="34.000 VND"
+                description="Quả kiwi hay quả lý gai Trung Quốc là quả mọng ăn được của một số loài dây leo thân gỗ trong chi Actinidia. Nhóm cây kiwi trồng phổ biến nhất có hình bầu dục, có kích thước bằng quả trứng gà mái lớn: chiều dài 5–8 cm và đường kính 4,5–5,5 cm"
+                action={{
+                  type: "internal",
+                  route: "/pages/profile/profile-overview",
+                  color: "info",
+                  label: "Xem thêm thông tin",
+                }}
+                authors={[{ image: team3, name: "Nick Daniel" }]}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <DefaultProjectCard
+                image={image4}
+                label="Ỏi"
+                title="46.000 VND"
+                description="Quả kiwi hay quả lý gai Trung Quốc là quả mọng ăn được của một số loài dây leo thân gỗ trong chi Actinidia. Nhóm cây kiwi trồng phổ biến nhất có hình bầu dục, có kích thước bằng quả trứng gà mái lớn: chiều dài 5–8 cm và đường kính 4,5–5,5 cm"
+                action={{
+                  type: "internal",
+                  route: "/pages/profile/profile-overview",
+                  color: "info",
+                  label: "Xem thêm thông tin",
+                }}
+                authors={[{ image: team3, name: "Nick Daniel" }]}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <DefaultProjectCard
+                image={image5}
+                label="Nho"
+                title="77.000 VND"
+                description="Quả kiwi hay quả lý gai Trung Quốc là quả mọng ăn được của một số loài dây leo thân gỗ trong chi Actinidia. Nhóm cây kiwi trồng phổ biến nhất có hình bầu dục, có kích thước bằng quả trứng gà mái lớn: chiều dài 5–8 cm và đường kính 4,5–5,5 cm"
+                action={{
+                  type: "internal",
+                  route: "/pages/profile/profile-overview",
+                  color: "info",
+                  label: "Xem thêm thông tin",
+                }}
+                authors={[{ image: team3, name: "Nick Daniel" }]}
+              />
+            </Grid>
           </Grid>
         </MDBox>
       </Card>
