@@ -40,7 +40,6 @@ import Dashboard from "layouts/dashboard";
 import Blog from "layouts/Blog";
 
 import Billing from "layouts/billing";
-import Profile from "layouts/profile";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -69,14 +68,6 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/blog",
     component: <Blog />,
-  },
-  {
-    type: "collapse",
-    name: "Profile",
-    key: "profile",
-    icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-    route: "/profile",
-    component: <Profile />,
   },
 ];
 

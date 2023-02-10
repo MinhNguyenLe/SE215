@@ -39,8 +39,6 @@ import image3 from "assets/images/q3.jpg";
 import image4 from "assets/images/q4.jpg";
 import image5 from "assets/images/q5.jpg";
 
-import team3 from "assets/images/team-3.jpg";
-
 import React from "react";
 
 function Dashboard() {
@@ -71,7 +69,7 @@ function Dashboard() {
           </MDBox>
           <MDButton onClick={handleClickOpen} variant="gradient" color="dark">
             <Icon sx={{ fontWeight: "bold" }}>add</Icon>
-            &nbsp;add new card
+            &nbsp;Thêm nông sản mới
           </MDButton>
         </MDBox>
         <MDBox p={2}>
@@ -87,8 +85,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -102,8 +100,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -117,8 +115,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -132,8 +130,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -147,8 +145,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -162,8 +160,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -177,8 +175,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -192,8 +190,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -207,8 +205,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
             <Grid item xs={12} md={6} xl={3}>
@@ -222,8 +220,8 @@ function Dashboard() {
                   route: "/pages/profile/profile-overview",
                   color: "info",
                   label: "Xem thêm thông tin",
+                  custom: "from-dashboard",
                 }}
-                authors={[{ image: team3, name: "Nick Daniel" }]}
               />
             </Grid>
           </Grid>

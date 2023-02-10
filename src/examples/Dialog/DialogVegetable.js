@@ -11,7 +11,7 @@ import DialogTitle from "@mui/material/DialogTitle";
 export default function DialogVegetable({ open, handleClose }) {
   return (
     <div>
-      <Dialog maxWidth open={open} onClose={handleClose}>
+      <Dialog maxWidth="lg" open={open} onClose={handleClose}>
         <DialogTitle>Thêm nông sản lên sàn</DialogTitle>
         <DialogContent>
           <DialogContentText>

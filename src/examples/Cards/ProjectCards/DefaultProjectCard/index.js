@@ -15,6 +15,8 @@ Coded by www.creative-tim.com
 
 // react-router-dom components
 import { Link } from "react-router-dom";
+import DetailVegetable from "examples/Dialog/DetailVegetable";
+import DetailBlog from "examples/Dialog/DetailBlog";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -29,27 +31,51 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDButton from "components/MDButton";
 import MDAvatar from "components/MDAvatar";
+import LinkMui from "@mui/material/Link";
+import React from "react";
 
 function DefaultProjectCard({ image, label, title, description, action, authors }) {
   const renderAuthors = authors.map(({ image: media, name }) => (
     <Tooltip key={name} title={name} placement="bottom">
-      <MDAvatar
-        src={media}
-        alt={name}
-        size="l"
-        sx={({ borders: { borderWidth }, palette: { white } }) => ({
-          border: `${borderWidth[2]} solid ${white.main}`,
-          cursor: "pointer",
-          position: "relative",
-          ml: -1.25,
+      <LinkMui href="/profile">
+        <MDAvatar
+          src={media}
+          alt={name}
+          size="l"
+          sx={({ borders: { borderWidth }, palette: { white } }) => ({
+            border: `${borderWidth[2]} solid ${white.main}`,
+            cursor: "pointer",
+            position: "relative",
+            ml: -1.25,
 
-          "&:hover, &:focus": {
-            zIndex: "10",
-          },
-        })}
-      />
+            "&:hover, &:focus": {
+              zIndex: "10",
+            },
+          })}
+        />
+      </LinkMui>
     </Tooltip>
   ));
+
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const [openBlog, setOpenBlog] = React.useState(false);
+
+  const handleClickOpenBlog = () => {
+    setOpenBlog(true);
+  };
+
+  const handleCloseBlog = () => {
+    setOpenBlog(false);
+  };
 
   return (
     <Card
@@ -111,7 +137,11 @@ function DefaultProjectCard({ image, label, title, description, action, authors 
         <MDBox display="flex" justifyContent="space-between" alignItems="center">
           {action.type === "internal" ? (
             <MDButton
-              component={Link}
+              onClick={() => {
+                if (action.custom === "from-dashboard") handleClickOpen();
+                else handleClickOpenBlog();
+              }}
+              // component={Link}
               to={action.route}
               variant="outlined"
               size="small"
@@ -135,6 +165,8 @@ function DefaultProjectCard({ image, label, title, description, action, authors 
           <MDBox display="flex">{renderAuthors}</MDBox>
         </MDBox>
       </MDBox>
+      <DetailVegetable open={open} handleClose={handleClose} />
+      <DetailBlog open={openBlog} handleClose={handleCloseBlog} />
     </Card>
   );
 }
@@ -151,6 +183,7 @@ DefaultProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   action: PropTypes.shape({
+    custom: PropTypes.string,
     type: PropTypes.oneOf(["external", "internal"]),
     route: PropTypes.string.isRequired,
     color: PropTypes.oneOf([
